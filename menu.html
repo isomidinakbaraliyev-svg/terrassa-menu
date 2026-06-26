@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TERRASSA KAFE</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+.header{
+text-align:center;
+padding:35px 20px;
+background:#151515;
+border-bottom:2px solid gold;
+}
+
+.logo{
+width:140px;
+height:140px;
+border-radius:50%;
+border:4px solid gold;
+object-fit:cover;
+box-shadow:0 0 25px gold;
+margin-bottom:15px;
+}
+
+.header h1{
+font-size:42px;
+color:gold;
+letter-spacing:3px;
+}
+
+.header p{
+color:#ccc;
+margin-top:10px;
+font-size:18px;
+}
+
+.container{
+width:92%;
+max-width:900px;
+margin:auto;
+padding:25px;
+}
+
+.card{
+background:#1d1d1d;
+padding:20px;
+margin-bottom:25px;
+border-radius:18px;
+border:1px solid #333;
+box-shadow:0 0 15px rgba(255,215,0,.15);
+}
+
+.card h2{
+color:gold;
+margin-bottom:15px;
+font-size:28px;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+padding:14px 0;
+border-bottom:1px solid #333;
+font-size:19px;
+}
+
+.price{
+color:gold;
+font-weight:bold;
+}
+
+.item:last-child{
+border:none;
+}
+
+
+.logo:hover{
+transform:scale(1.05);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+transition:.3s;
+box-shadow:0 0 25px rgba(255,215,0,.35);
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+
+<img src="{{ url_for('static', filename='images/terrassa_logo.png') }}" class="logo">
+
+<h1>TERRASSA KAFE</h1>
+
+<p>🍽️ PREMIUM MENU</p>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>🍲 Birinchi taom</h2>
+
+<div class="item"><span>Sho'rva mol go'shti</span><span class="price">Narx</span></div>
+<div class="item"><span>Sho'rva tovuq go'shti</span><span class="price">Narx</span></div>
+<div class="item"><span>Frikadelka</span><span class="price">Narx</span></div>
+<div class="item"><span>Mastava</span><span class="price">Narx</span></div>
+<div class="item"><span>Chuchvara</span><span class="price">Narx</span></div>
+<div class="item"><span>Uyg'urcha Lag'mon</span><span class="price">Narx</span></div>
+
+</div>
+
+<div class="card">
+
+<h2>🍛 Ikkinchi taom</h2>
+
+<div class="item"><span>Toshkent To'y oshi</span><span class="price">Narx</span></div>
+<div class="item"><span>Tabaka</span><span class="price">Narx</span></div>
+<div class="item"><span>Bifshteks</span><span class="price">Narx</span></div>
+<div class="item"><span>Bifstrogan</span><span class="price">Narx</span></div>
+<div class="item"><span>Gulyash</span><span class="price">Narx</span></div>
+<div class="item"><span>Manti</span><span class="price">Narx</span></div>
+
+</div>
+
+<div class="card">
+
+<h2>🍢 Shashlik</h2>
+
+<div class="item"><span>Qiyma</span><span class="price">Narx</span></div>
+<div class="item"><span>Kuskavoy</span><span class="price">Narx</span></div>
+<div class="item"><span>Tovuqli</span><span class="price">Narx</span></div>
+
+</div>
+
+<div class="card">
+
+<h2>🍔 Fast Food</h2>
+
+<div class="item"><span>Hot Dog</span><span class="price">Narx</span></div>
+<div class="item"><span>Lavash</span><span class="price">Narx</span></div>
+
+</div>
+
+<div class="card">
+
+<h2>🥟 Somsa</h2>
+
+<div class="item"><span>Go'shtli</span><span class="price">Narx</span></div>
+<div class="item"><span>Tovuqli</span><span class="price">Narx</span></div>
+<div class="item"><span>Kartoshkali</span><span class="price">Narx</span></div>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
