@@ -1,10 +1,19 @@
-from flask import Flask
+from flask import Flask, send_from_directory
+import os
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Terrassa Kafe server ishlayapti! ✅"
+    return send_from_directory(".", "index.html")
+
+@app.route("/menu")
+def menu():
+    return send_from_directory(".", "menu.html")
+
+@app.route("/<path:path>")
+def static_files(path):
+    return send_from_directory(".", path)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
